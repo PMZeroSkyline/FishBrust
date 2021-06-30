@@ -1,0 +1,1 @@
+pyinstaller -F -w -i fish.ico fishbrust.py
