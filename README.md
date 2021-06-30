@@ -18,7 +18,7 @@
 
   2. 可以使用 Source\build.bat 运行
 
-  3. 可以使用 Source\build.bat 打包 需要安装依赖
+  3. 可以使用 Source\build.bat 打包 打包需要安装以下依赖（请先确保你安装了python 和 pip并配置好了环境变量 只要是正常安装的python哪这些事情python在安装时应该已经帮您做好了 你只需要打开cmd输入以下命令即可）
     
 ```
 pip install pyinstaller 
