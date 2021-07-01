@@ -128,7 +128,7 @@ def fun_send(filepath):
     em['Subject'] = '咸鱼突刺'
     em['from'] = e1.get()
     em['to'] = e2.get()
-    content = MIMEText("来了, 来了________" + os.path.basename(filepath) + "________冲进来了!")
+    content = MIMEText(os.path.basename(filepath) + ",一只咸鱼冲了进来!")
     em.attach(content)
     app = MIMEApplication(open(filepath, mode="rb").read())
     app.add_header('content-disposition', 'attachment', filename=os.path.basename(filepath))
@@ -143,7 +143,7 @@ def fun_send(filepath):
     smtp.close()
 
 def fun_b3():
-    p = re.compile('^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$')
+    p = re.compile('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$')
     if len(e1.get()) == 0:
         showinfo("请填写发件人邮箱", "在发件人处填写你的邮箱")
         return
