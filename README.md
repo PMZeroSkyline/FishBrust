@@ -33,5 +33,3 @@
 pip install pyinstaller 
 ```
 
-# ![ReNamer](icon.ico)  请我喝杯咖啡 ♥：
-![ReNamer](3.jpg)
